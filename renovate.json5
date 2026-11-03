@@ -87,8 +87,8 @@
       // These packages are hosted on ghcr.io, so Renovate cannot extract timestamps and
       // marks all versions as 'pending'. This is a documented Renovate limitation:
       // https://docs.renovatebot.com/modules/datasource/docker/#release-timestamp-support
-      matchRegistryUrls: [
-        'https://ghcr\\.io',
+      matchPackageNames: [
+        '/(^ghcr\.io)\/(.*)/',
       ],
       minimumReleaseAgeBehaviour: "timestamp-optional",
     },
