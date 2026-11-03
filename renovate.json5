@@ -88,7 +88,7 @@
       // marks all versions as 'pending'. This is a documented Renovate limitation:
       // https://docs.renovatebot.com/modules/datasource/docker/#release-timestamp-support
       matchPackageNames: [
-        '/(^ghcr\.io)\/(.*)/',
+        '/^ghcr\.io\/.*$/',
       ],
       minimumReleaseAgeBehaviour: "timestamp-optional",
     },
