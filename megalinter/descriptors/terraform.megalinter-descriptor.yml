@@ -280,7 +280,7 @@ linters:
       dockerfile:
         - |-
           # renovate: datasource=docker depName=ghcr.io/opentofu/opentofu
-          ARG TERRAFORM_TOFU_FMT_VERSION=1.13.2-minimal
+          ARG TERRAFORM_TOFU_FMT_VERSION=1.13.5-minimal
         - FROM ghcr.io/opentofu/opentofu:${TERRAFORM_TOFU_FMT_VERSION} AS opentofu
         - COPY --link --from=opentofu /usr/local/bin/tofu /usr/bin/
     supported_platforms:
@@ -417,7 +417,7 @@ linters:
       dockerfile:
         - |-
           # renovate: datasource=docker depName=ghcr.io/opentofu/opentofu
-          ARG TERRAFORM_TOFU_FMT_VERSION=1.13.2-minimal
+          ARG TERRAFORM_TOFU_FMT_VERSION=1.13.5-minimal
         - FROM ghcr.io/opentofu/opentofu:${TERRAFORM_TOFU_FMT_VERSION} AS opentofu
         - COPY --link --from=opentofu /usr/local/bin/tofu /usr/bin/
     supported_platforms:

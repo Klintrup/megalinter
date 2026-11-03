@@ -19,7 +19,7 @@ ARG BASH_SHFMT_VERSION=v3.14.1-alpine
 # renovate: datasource=docker depName=alpine/terragrunt
 ARG TERRAFORM_TERRAGRUNT_VERSION=1.17.0
 # renovate: datasource=docker depName=ghcr.io/opentofu/opentofu
-ARG TERRAFORM_TOFU_FMT_VERSION=1.13.2-minimal
+ARG TERRAFORM_TOFU_FMT_VERSION=1.13.5-minimal
 #ARGTOP__END
 
 #############################################################################################
