@@ -87,12 +87,10 @@
       // These packages are hosted on ghcr.io, so Renovate cannot extract timestamps and
       // marks all versions as 'pending'. This is a documented Renovate limitation:
       // https://docs.renovatebot.com/modules/datasource/docker/#release-timestamp-support
-      matchPackageNames: [
-        'ghcr.io/astral-sh/uv',
-        'ghcr.io/betterleaks/betterleaks',
-        'ghcr.io/opentofu/opentofu',
+      matchRegistryUrls: [
+        'https://ghcr\\.io',
       ],
-      minimumReleaseAgeBehaviour: "minimumReleaseAgeBehaviour",
+      minimumReleaseAgeBehaviour: "timestamp-optional",
     },
     {
       // One Python version for every MegaLinter context: .python-version (local uv,
