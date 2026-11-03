@@ -91,7 +91,6 @@
         '/^ghcr\.io\/.*$/',
       ],
       minimumReleaseAgeBehaviour: "timestamp-optional",
-      minimumReleaseAge: null,
     },
     {
       // One Python version for every MegaLinter context: .python-version (local uv,
@@ -196,8 +195,6 @@
         'ghcr.io/betterleaks/betterleaks',
         'betterleaks/betterleaks',
       ],
-      minimumReleaseAgeBehaviour: "timestamp-optional",
-      minimumReleaseAge: null,
     },
     {
       // npm-package-json-lint-config-default majors require the matching
