@@ -83,6 +83,18 @@
       ],
     },
     {
+      // Renovate's Docker datasource only supports release timestamps from Docker Hub.
+      // These packages are hosted on ghcr.io, so Renovate cannot extract timestamps and
+      // marks all versions as 'pending'. This is a documented Renovate limitation:
+      // https://docs.renovatebot.com/modules/datasource/docker/#release-timestamp-support
+      matchPackageNames: [
+        'ghcr.io/astral-sh/uv',
+        'ghcr.io/betterleaks/betterleaks',
+        'ghcr.io/opentofu/opentofu',
+      ],
+      minimumReleaseAge: null,
+    },
+    {
       // One Python version for every MegaLinter context: .python-version (local uv,
       // CI setup-python via python-version-file) and every python:X.Y.Z-alpine base
       // image (Dockerfile, flavors/, linters/, server/). Bump them all in the same PR,
