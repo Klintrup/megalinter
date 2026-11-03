@@ -92,7 +92,7 @@
         'ghcr.io/betterleaks/betterleaks',
         'ghcr.io/opentofu/opentofu',
       ],
-      minimumReleaseAge: null,
+      minimumReleaseAgeBehaviour: "ignore",
     },
     {
       // One Python version for every MegaLinter context: .python-version (local uv,
